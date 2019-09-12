@@ -1,4 +1,4 @@
-# Dropdown Menu
+# Mobile Menu
 
 This repository contains a mobile navigation menu template that can be reused as needed.
 
