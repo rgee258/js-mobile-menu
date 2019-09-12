@@ -1,0 +1,92 @@
+/* Styling for demoing purposes */
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.sample-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: Arial;
+  text-align: center;
+}
+
+.sample-content h1 {
+  font-size: 1.5rem;
+}
+
+.sample-content p {
+  font-size: 1rem;
+}
+
+/* Styling for Mobile Menu */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 25%;
+  font-family: Calibri;
+  color: #a6a6a6;
+  /* Translate percentage matches the size of the nav-col */
+  /* .5 is added to prevent menu edges leaking during mobile testing */
+  transform: translate(-65.5%);
+  transition: transform 0.5s;
+}
+
+.nav-col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 65%;
+  background-color: #2c323a;
+}
+
+.nav-col a {
+  display: inline-block;
+  align-self: center;
+  margin-top: 10%;
+  font-size: 1.75rem;
+  color: #a6a6a6;
+  text-decoration: none;
+}
+
+.nav-col a:last-of-type {
+  margin-bottom: 15%;
+}
+
+.nav-col a:hover {
+  color: white;
+}
+
+.menu-btn {
+  width: 30%;
+}
+
+.bars-icon {
+  width: 100%;
+  font-size: 2rem;
+  padding: 32%;
+  border-left: 1px solid #a6a6a6;
+  background-color: #2c323a;
+}
+
+.bars-icon:hover {
+  cursor: pointer;
+}
+
+.expanded {
+  /* Translate back to 0 to restore the contents to its original position */
+  transform: translate(0);
+  transition: transform 0.5s;
+}
+
+/* End of Mobile Menu Styling */
